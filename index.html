@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-color: black;
+}
+#container {
+  /* position: relative; */
+}
+#wheel {
+  position: absolute;
+  left:32%;
+  top:50px;
+  animation: wheelSpin 3s linear infinite;
+}
+#body {
+  position: absolute;
+  width: 350px;
+  left:37.5%;
+  top: 100px;
+  animation: dissapear 3s linear infinite;
+}
+#hand {
+  position: absolute;
+  width: 130px;
+  top: 250px;
+  left: 63%;
+  animation: handSwing 3s ease-out infinite;
+}
+#shh {
+  position: absolute;
+  width: 40vw;
+  top: 480px;
+  left: 30%;
+  animation: pop 3s linear infinite;
+}
+#text {
+  width: 500px;
+  position: absolute;
+  top: 50px;
+  left: 30%;
+}
+#crewmate {
+  position: absolute;
+  top: 170px;
+  left: 35%;
+}
+#container p {
+  position: absolute;
+  top: 450px;
+  left: 47%;
+  font-size: 2em
+}
+@keyframes wheelSpin {
+  0% {
+    transform: rotate(0); opacity: 1;
+  }
+  99% {
+    transform: rotate(60deg); opacity:1;
+  }
+  100% {
+    /* opacity: 0; */
+  }
+}
+@keyframes handSwing {
+  0% {
+    transform: rotate(15deg) translatex(0) translatey(0);
+  }
+  30% {
+    
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) translatey(-30px) translatex(-250px);
+    opacity: 0;
+  }
+}
+@keyframes dissapear {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(150%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+<div id="wheel-border">
+  <img id="wheel" src="https://drive.google.com/uc?export=view&id=1OjoYRflUd6RMNM24JRYj2H38O1Lt5DBV"/>
+<img id="body" src="https://drive.google.com/uc?export=view&id=1g9Mo_V3uhUeJKJtpxOORoACHbo54yM-g"/>  
+<img id="hand" src="https://drive.google.com/uc?export=view&id=1zB5Ly8ZvOivGjus0gUjGnUkkQz15ClTY"/>
+  </div>
+<img id="shh" src="https://drive.google.com/uc?export=view&id=1CdwI3mJVhfW7eJccGqBVPUa1qctFXt2U"/>  
+  <!--   <img id="text" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Among_Us_Impostor_text.svg/1280px-Among_Us_Impostor_text.svg.png"/> -->
+<!--   <img id="crewmate" src="https://assets.stickpng.com/thumbs/61d183263a856e0004c6334a.png"/> -->
+<!--   <p>You</p> -->
+</div>
+</body>
+</html>
